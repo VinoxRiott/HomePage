@@ -1,0 +1,80 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	height: 800px;
+	background: #000000 10%;
+}
+
+
+.glow{
+	position: relative;
+	margin: 4px auto 0;
+	width: 99%;
+	height: 18%;
+	background: linear-gradient(0deg,#000,#262626);
+}
+
+.glow:before{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;	
+	background: linear-gradient(45deg,#fb0094,#00ff00,#0000ff,#ffff00,#ff0000,#fb0094,#00ff00,#0000ff,#ffff00,#ff0000);
+	background-size: 400%;
+	width: calc(100% + 5px);
+	height: calc(100% + 5px);
+	z-index: -1;
+	animation: animate 50s linear infinite;
+}
+
+@keyframes animate
+{
+	0%{
+		background-position: 0 0;
+
+	}
+	50%{
+		background-position: 400% 0;
+
+	}
+	100%{
+		background-position: 0 0;
+
+	}
+}
+
+
+
+
+.bckimg{
+text-align: center;
+opacity: 30%;
+border-radius: 20px;
+}
+
+
+
+.mytxt{
+	padding-top: 2%;
+	font-weight: bold;
+	color: #fff;
+	font-family: calibri;
+	float: right;
+	padding-right: 34.5%;
+	font-size: 360%;
+	text-shadow:0 0 25px #ff005b;
+}
+
+
+.neon {
+    filter: brightness(200%);
+}
+
+.logo{
+	padding-top: 1%;
+	padding-left: 1%;
+	float: left;
+}
+
